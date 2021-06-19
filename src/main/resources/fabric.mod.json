@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "spaceserve-tablist-cloak",
+  "version": "${version}",
+  "name": "SpaceServe Tablist Cloak",
+  "description": "Hides that a player is in spectator mode from the tablist",
+  "authors": [
+    "SpaceClouds42"
+  ],
+  "contact": {
+    "homepage": "https://github.com/SpaceServe",
+    "sources": "https://github.com/SpaceServe/spaceserve-tablist-cloak",
+    "issues": "https://github.com/SpaceServe/spaceserve-tablist-cloak/issues"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/tablist/cloak/icon.png",
+
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      {
+        "value": "org.spaceserve.tablist.cloak.Common::INSTANCE"
+      }
+    ]
+  },
+  "mixins": [
+    "tablist-cloak.mixins.json"
+  ],
+  "accessWidener": "tablist-cloak.accesswidener",
+
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric-language-kotlin": ">=1.6.0+kotlin.1.5.0",
+    "minecraft": ">=1.17",
+    "spaceserve-config": ">=0.2.0"
+  }
+}

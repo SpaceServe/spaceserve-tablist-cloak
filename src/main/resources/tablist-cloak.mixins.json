@@ -1,0 +1,10 @@
+{
+  "package": "org.spaceserve.tablist.cloak.mixin",
+  "compatibilityLevel": "JAVA_16",
+
+  "mixins": [
+    "ServerPlayNetworkHandlerMixin",
+    "ServerPlayerInteractionManagerMixin",
+    "EmptyJavaMixin"
+  ]
+}
